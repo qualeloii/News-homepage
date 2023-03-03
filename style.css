@@ -1,0 +1,68 @@
+:root {
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+}
+
+/* ?Main Content */
+
+#mainContent h1{
+    font-weight: 800;
+    font-size: 60px;
+}
+#mainContent h2{
+    padding-top: 1em;
+    color: var(--grayish-blue);
+    font-weight: 600;
+    font-size: 15px;
+}
+#mainContent button{
+    color: var(--off-white);
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-color: var(--soft-red);
+    border: none;
+    padding: 1em 2em;
+    margin-top: 2em;
+}
+.main-text-section{
+    max-width: 60%;
+}
+.text-section{
+    margin-top: 2em;
+}
+
+/* ?Dashboard */
+#dashboard{
+    padding-left: 1.5em;
+}
+#dashboard h2{
+    font-size: 40px;
+    color: var(--soft-orange);
+}
+#dashboard h4{
+    font-size: 25px;
+    color: var(--off-white);
+}
+#dashboard h5{
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+.newDashboard{
+    background-color: var(--very-dark-blue);
+}
+.flex-column-div{
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .flex-column-div{
+        flex-direction: column;
+    }
+    .main-text-section{
+        max-width: 100%;
+    }
+  }
