@@ -7,16 +7,35 @@
     --soft-red: hsl(5, 85%, 63%);
 }
 
-/* ?Main Content */
+/* ?Utils */
+.style-two {
+    margin-right: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.flex-column-div{
+    display: flex;
+}
 
+/* ?Navbar */
+.nav-item a:hover{
+    color: var(--soft-red);
+}
+
+/* ?Main Content */
 #mainContent h1{
+    color: var(--very-dark-blue);
     font-weight: 800;
-    font-size: 60px;
+    font-size: 62px;
 }
 #mainContent h2{
     padding-top: 1em;
-    color: var(--grayish-blue);
-    font-weight: 600;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
     font-size: 15px;
 }
 #mainContent button{
@@ -28,41 +47,91 @@
     padding: 1em 2em;
     margin-top: 2em;
 }
+#mainContent button:hover{
+    background-color: var(--very-dark-blue);
+}
 .main-text-section{
-    max-width: 60%;
+    max-width: 70%;
+    margin-right: 0.5em;
 }
 .text-section{
-    margin-top: 2em;
+    margin-top: 1em;
+}
+
+.mainPicture{
+    content:url("assets/images/image-web-3-desktop.jpg");
 }
 
 /* ?Dashboard */
 #dashboard{
-    padding-left: 1.5em;
+    margin-left: 0.5em;
+    height: 100%;
 }
 #dashboard h2{
+    font-weight: 700;
     font-size: 40px;
     color: var(--soft-orange);
 }
-#dashboard h4{
-    font-size: 25px;
+#dashboard a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
     color: var(--off-white);
 }
+#dashboard a:hover{
+    color: var(--soft-orange);
+}
 #dashboard h5{
+    font-weight: 300;
     font-size: 15px;
     color: var(--grayish-blue);
 }
 .newDashboard{
     background-color: var(--very-dark-blue);
 }
-.flex-column-div{
+
+/* ?Example Cards */
+.exampleCard{
     display: flex;
+    margin: 1em 0em;
+}
+.cardImg{
+    max-height: 150px;
+}
+.cardText{
+    padding-left: 1em;
+}
+.cardText h2{
+    color: var(--grayish-blue);
+}
+.cardText a{
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+.cardText a:hover{
+    color: var(--soft-red);
+}
+.cardText h4{
+    color: var(--grayish-blue);
+    font-size: 15px;
 }
 
-@media screen and (max-width: 480px) {
+/* ?Media Querys */
+@media screen and (max-width: 900px) {
     .flex-column-div{
         flex-direction: column;
     }
     .main-text-section{
         max-width: 100%;
+        margin-right: 0.5em;
+    }
+    #dashboard{
+        margin-top: 3em;
+        margin-left: 0em;
+    }
+    .mainPicture{
+        content:url("assets/images/image-web-3-mobile.jpg");
     }
   }
